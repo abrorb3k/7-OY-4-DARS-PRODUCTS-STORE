@@ -1,0 +1,29 @@
+import React from 'react';
+
+const Navbar = () => {
+	return (
+		<div className='container border-b-2 border-primary flex justify-between items-center py-3'>
+			<a href='/' className='flex items-center gap-5 text-primary'>
+				<img src='/logo.svg' alt='logo' />
+				<div>
+					<span className='block text-3xl font-semibold'>Red Clothes</span>
+					<span className='text-sm'>Магазин одежды для практики </span>
+				</div>
+			</a>
+			<div className='flex gap-5 items-center text-primary text-2xl'>
+				<a href='/'>
+					<i className='fa me-2 fa-shopping-cart'></i>
+					<span>30 595 ₽</span>
+				</a>
+				<a href='/'>
+					<i className='fa-regular fa-heart'></i>
+				</a>
+				<a href='/'>
+					<i className='fa-regular fa-user'></i>
+				</a>
+			</div>
+		</div>
+	);
+};
+
+export default Navbar;

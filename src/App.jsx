@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Filter, Home, Navbar, Wishlist } from './components';
+import { Filter, Home, Navbar, Wishlist, Cart } from './components';
 import { Route, Routes } from 'react-router-dom';
 import {
 	setError,
@@ -39,15 +39,16 @@ const App = () => {
 		setToLocal('wishlist', wishlist);
 	}, [wishlist]);
 	return (
-		<div>
-			<Navbar />
-			<Routes>
-				<Route path='/' element={<Home />} />
-				<Route path='/filter/:q' element={<Filter />} />
-				<Route path='/wishlist' element={<Wishlist />} />
-			</Routes>
-		</div>
-	);
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/filter/:q" element={<Filter />} />
+        <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+    </div>
+  );
 };
 
 export default App;

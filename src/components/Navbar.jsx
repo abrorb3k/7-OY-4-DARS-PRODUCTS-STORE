@@ -12,16 +12,16 @@ const Navbar = () => {
 				</div>
 			</a>
 			<div className='flex gap-5 items-center text-primary text-2xl'>
-				<a href='/'>
+				<Link to='/cart'>
 					<i className='fa me-2 fa-shopping-cart'></i>
 					<span>30 595 ₽</span>
-				</a>
+				</Link>
 				<Link to={'/wishlist'}>
 					<i className='fa-regular fa-heart'></i>
 				</Link>
-				<a href='/'>
+				<Link to='/'>
 					<i className='fa-regular fa-user'></i>
-				</a>
+				</Link>
 			</div>
 		</div>
 	);

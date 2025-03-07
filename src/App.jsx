@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Filter, Home, Navbar, Wishlist, Cart } from './components';
+import { Filter, Home, Navbar, Wishlist, Cart, Register, Login } from './components';
 import { Route, Routes } from 'react-router-dom';
 import {
 	setError,
@@ -46,6 +46,8 @@ const App = () => {
         <Route path="/filter/:q" element={<Filter />} />
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </div>
   );
